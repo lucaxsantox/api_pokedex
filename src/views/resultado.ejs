@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src='main.js'></script>
+  <style>
+    .card-text{
+		text-align: center;
+		text-transform: capitalize;
+	}
+body {
+	margin-top: 7%;
+	background-image: url("https://images.wallpapersden.com/image/download/pokemon-pikachu-art_a25tbW6UmZqaraWkpJRmbmdlrWZlbWU.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.pokemon { 	width: 40%;
+            margin: auto;
+			opacity: 0.9;
+}
+  </style>
+</head>
+<body>
+    <div class="card  pokemon">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img class="card-image" src="https://pokeres.bastionbot.org/images/pokemon/<%= dado.id %>.png" height="170" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <%  { %>
+                <h5 class="card-title"></h5>
+              <p class="card-text"><strong >Name:</strong> <%= dado.forms[0].name %></p>
+              <p class="card-text"> <strong >Type:</strong> <%= dado.types[0].type.name %></p>
+			  <p class="card-text"><strong >Ability:</strong> <%= dado.abilities[01].ability.name %></p>
+			  <p class="card-text"><strong >Move:</strong> <%= dado.moves[0].move.name %><br/></p>
+                <% } %>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -6,7 +6,7 @@ O API-Pokedex é um projeto feito para o estudo de NodeJS.
 
 
 
-<div align="center"> <img width="300px" src="/images/favicon.png"> </div> <br>
+<div align="center"> <img width="300px" src="https://i.ytimg.com/vi/ajScpnXaWtQ/maxresdefault.jpg"> </div> <br>
 
 ## Índice
 * [Sobre o projeto](#sobre-o-projeto)
@@ -27,4 +27,4 @@ Atualmente rodando com:
 - [x] Body-Parser
 
 ## Screenshots
-<img width="90%" src="/images/screenshot.png">
+<img width="90%" src="src/views/screenshot.png">

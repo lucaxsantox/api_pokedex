@@ -36,4 +36,4 @@ app.post("/buscarType", async(req,res)=>{
     
 })
 
-app.listen(1501)
+app.listen(process.env.PORT || 1501)
